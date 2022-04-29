@@ -1,5 +1,4 @@
 const PartnersController = require("./../../../lib/controllers/PartnersController");
-const Reader = require("./../../../lib/utils/Reader");
 
 describe("Tests para VisualThinking", () => {
     test("1: Obtener todos los partners ", () => {
@@ -13,9 +12,9 @@ describe("Tests para VisualThinking", () => {
     });
 
     test("3: Obtener todos los partners con credito mayor ", () => {
-        const list_partners_credit = PartnersController.getPartnersCredit()
+        const list_partners_credit = PartnersController.getPartnersCredit();
         expect(list_partners_credit.length).toBe(27);
-        expect(list_partners_credit).toContain("Warren")
+        expect(list_partners_credit).toContain("Warren");
     });
 
 });
