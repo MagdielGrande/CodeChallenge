@@ -1,5 +1,5 @@
 const VisualThinking = require("./../../lib/services/VisualThinking");
-const Reader = require("./../../lib/utils/reader");
+const Reader = require("./../../lib/utils/Reader");
 
 describe("Tests para VisualThinking", () => {
     test("1: Obtener todos los partners ", () => {
